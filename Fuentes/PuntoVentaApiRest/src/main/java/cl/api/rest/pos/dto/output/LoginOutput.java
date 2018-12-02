@@ -3,6 +3,8 @@ package cl.api.rest.pos.dto.output;
 import java.io.Serializable;
 import java.util.Date;
 
+import cl.api.rest.pos.dto.configuration.HeaderOutput;
+
 /**
  * Salida de login
  * 
@@ -15,6 +17,11 @@ public class LoginOutput implements Serializable {
 	 * UID
 	 */
 	private static final long serialVersionUID = -2322975906164700793L;
+	
+	/**
+	 * Cabecera del servicio
+	 */
+	private HeaderOutput headerOutput;
 
 	/**
 	 * Indica si se ha ingresado correctamente
@@ -41,6 +48,14 @@ public class LoginOutput implements Serializable {
 
 	public void setLoginTime(Date loginTime) {
 		this.loginTime = loginTime;
+	}
+
+	public HeaderOutput getHeaderOutput() {
+		return headerOutput;
+	}
+
+	public void setHeaderOutput(HeaderOutput headerOutput) {
+		this.headerOutput = headerOutput;
 	}
 
 }

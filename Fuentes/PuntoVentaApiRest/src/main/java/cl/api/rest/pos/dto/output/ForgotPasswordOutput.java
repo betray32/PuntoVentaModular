@@ -3,6 +3,8 @@ package cl.api.rest.pos.dto.output;
 import java.io.Serializable;
 import java.util.Date;
 
+import cl.api.rest.pos.dto.configuration.HeaderOutput;
+
 /**
  * Salida para recuperar contrasena
  * 
@@ -17,9 +19,14 @@ public class ForgotPasswordOutput implements Serializable {
 	private static final long serialVersionUID = 3968785277595206871L;
 
 	/**
+	 * Cabecera del servicio
+	 */
+	private HeaderOutput headerOutput;
+
+	/**
 	 * Indica si la password fue entregada hacia el email indicado correctamente
 	 */
-	public boolean passwordDelivered;
+	private boolean passwordDelivered;
 
 	/**
 	 * Indica el tiempo restante para ingresar la password
@@ -43,4 +50,11 @@ public class ForgotPasswordOutput implements Serializable {
 		this.requestRemainTime = requestRemainTime;
 	}
 
+	public HeaderOutput getHeaderOutput() {
+		return headerOutput;
+	}
+
+	public void setHeaderOutput(HeaderOutput headerOutput) {
+		this.headerOutput = headerOutput;
+	}
 }
