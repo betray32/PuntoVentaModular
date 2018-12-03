@@ -1,4 +1,4 @@
-package cl.api.rest.pos.dto.output;
+package cl.api.rest.pos.login;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,7 +11,7 @@ import cl.api.rest.pos.dto.configuration.HeaderOutput;
  * @author camilongo
  *
  */
-public class LoginOutput implements Serializable {
+public class DtoLoginOutput implements Serializable {
 
 	/**
 	 * UID

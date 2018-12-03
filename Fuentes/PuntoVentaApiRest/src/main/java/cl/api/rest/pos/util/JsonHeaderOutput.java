@@ -1,6 +1,5 @@
 package cl.api.rest.pos.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import cl.api.rest.pos.dto.configuration.HeaderOutput;
@@ -11,18 +10,15 @@ import cl.api.rest.pos.dto.configuration.HeaderOutput;
  * @author camilongo
  *
  */
-@Component
 public class JsonHeaderOutput {
-
-	@Autowired
-	private HeaderOutput dto;
 
 	/**
 	 * OK
 	 * 
 	 * @return
 	 */
-	public HeaderOutput ok() {
+	public static HeaderOutput ok() {
+		HeaderOutput dto = new HeaderOutput();
 		dto.setDesc("OK");
 		dto.setExitCode("0");
 		return dto;

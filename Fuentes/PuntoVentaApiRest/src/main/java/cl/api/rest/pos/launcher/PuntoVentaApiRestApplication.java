@@ -6,11 +6,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Launcher
+ * 
  * @author camilongo
  *
  */
 @SpringBootApplication
-@ComponentScan("cl.api.rest.pos.rest")
+@ComponentScan({ "cl.api.rest.pos.login", "cl.api.rest.pos.util" })
 public class PuntoVentaApiRestApplication {
 
 	public static void main(String[] args) {
