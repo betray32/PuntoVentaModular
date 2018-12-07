@@ -1,9 +1,5 @@
 package cl.api.rest.pos.util;
 
-import java.io.StringWriter;
-
-import javax.xml.bind.JAXB;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -87,22 +83,6 @@ public class Utiles {
 		}
 
 		return res;
-
-	}
-
-	/**
-	 * Permite mediante un objeto cualquiera, devolverlo en cadena y formato XML
-	 * 
-	 * @param input
-	 * @return
-	 */
-	public static String obtenerCadenaXML(Object input) {
-
-		StringWriter sw = new StringWriter();
-		JAXB.marshal(input, sw);
-		String xmlString = sw.toString();
-
-		return xmlString;
 
 	}
 
