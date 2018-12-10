@@ -1,4 +1,4 @@
-package cl.api.rest.pos.login;
+package cl.api.rest.pos.module.login;
 
 import java.io.Serializable;
 

@@ -1,4 +1,5 @@
-package cl.api.rest.pos.login;
+
+package cl.api.rest.pos.module.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +24,6 @@ public class LoginRest {
 	 * @return
 	 */
 	@PostMapping("Authentication")
-	@ResponseBody
 	public DtoLoginOutput login(@RequestBody DtoInputLogin input) {
 		return loginService.login(input);
 	}

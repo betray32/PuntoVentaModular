@@ -11,7 +11,11 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 @SpringBootApplication
-@ComponentScan({ "cl.api.rest.pos.login", "cl.api.rest.pos.util" })
+@ComponentScan
+({
+	"cl.api.rest.pos.module" , 
+	"cl.api.rest.pos.util" 
+})
 public class PuntoVentaApiRestApplication {
 
 	public static void main(String[] args) {
