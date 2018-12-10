@@ -4,7 +4,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
-import cl.api.rest.pos.module.login.LoginRest;
 import cl.api.rest.pos.util.JsonHeaderOutput;
 
 /**

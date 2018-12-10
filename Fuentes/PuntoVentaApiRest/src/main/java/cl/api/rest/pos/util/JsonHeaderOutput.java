@@ -1,7 +1,5 @@
 package cl.api.rest.pos.util;
 
-import org.springframework.stereotype.Component;
-
 import cl.api.rest.pos.dto.configuration.HeaderOutput;
 
 /**
